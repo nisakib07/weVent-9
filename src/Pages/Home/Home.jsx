@@ -2,6 +2,7 @@
 import { useLoaderData } from "react-router-dom";
 import Navbar from "../../components/Navbar/Navbar";
 import Card from "../../components/Card/Card";
+import Footer from "../../components/footer/Footer";
 
 const Home = () => {
   const data = useLoaderData();
@@ -45,6 +46,7 @@ const Home = () => {
           ))}
         </div>
       </div>
+      <Footer></Footer>
     </div>
   );
 };
