@@ -8,7 +8,11 @@ const PrivateRoute = ({ children }) => {
   const location = useLocation();
 
   if (loader) {
-    return <span className="loading loading-infinity loading-lg"></span>;
+    return (
+      <div className="text-center">
+        <span className="loading loading-infinity loading-lg"></span>
+      </div>
+    );
   }
 
   if (user) {
