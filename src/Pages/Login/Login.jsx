@@ -3,10 +3,11 @@ import Navbar from "../../components/Navbar/Navbar";
 import { AuthContext } from "../../Providers/AuthProvider/AuthProvider";
 import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import { useLocation, useNavigate } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
+import { FcGoogle } from "react-icons/fc";
 
 const Login = () => {
-  const { userSignIn } = useContext(AuthContext);
+  const { userSignIn, googleSignIn } = useContext(AuthContext);
   const location = useLocation();
   const navigate = useNavigate();
 
@@ -25,6 +26,14 @@ const Login = () => {
       .catch(() => {
         toast.error("Sign In Failed");
       });
+  };
+
+  const handleGoogleSignIn = () => {
+    googleSignIn().then(() => {
+      toast.success("Signed In Successfully");
+
+      navigate(location?.state ? location.state : "/");
+    });
   };
 
   return (
@@ -68,6 +77,21 @@ const Login = () => {
                   value="Login"
                 />
               </div>
+              <div className="flex flex-col items-center gap-2">
+                <p className="text-center font-semibold text-lg">Or</p>
+                <p className="text-lg">Sign in with</p>
+                <button
+                  onClick={handleGoogleSignIn}
+                  className="bg-white p-5 rounded-lg">
+                  <FcGoogle className="text-2xl"></FcGoogle>
+                </button>
+              </div>
+              <p className="text-lg">
+                New Here?{" "}
+                <Link to="/register">
+                  <span className="font-bold text-pink-600">Register Now!</span>
+                </Link>
+              </p>
             </form>
           </div>
         </div>

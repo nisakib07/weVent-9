@@ -3,6 +3,7 @@ import Navbar from "../../components/Navbar/Navbar";
 import { AuthContext } from "../../Providers/AuthProvider/AuthProvider";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import { Link } from "react-router-dom";
 // import { useNavigate } from "react-router-dom";
 
 const Register = () => {
@@ -90,7 +91,14 @@ const Register = () => {
                   value="Register"
                 />
               </div>
+              <p className="text-lg">
+                Already have an account?
+                <Link to="/login">
+                  <span className="font-bold ml-1 text-pink-600">Login!</span>
+                </Link>
+              </p>
             </form>
+
             <ToastContainer
               pauseOnHover={false}
               autoClose={2000}></ToastContainer>
