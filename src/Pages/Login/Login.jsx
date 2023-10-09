@@ -29,11 +29,14 @@ const Login = () => {
   };
 
   const handleGoogleSignIn = () => {
-    googleSignIn().then(() => {
-      toast.success("Signed In Successfully");
-
-      navigate(location?.state ? location.state : "/");
-    });
+    googleSignIn()
+      .then(() => {
+        toast.success("Signed In Successfully");
+        navigate(location?.state ? location.state : "/");
+      })
+      .catch(() => {
+        toast.error("Sign In Failed");
+      });
   };
 
   return (
