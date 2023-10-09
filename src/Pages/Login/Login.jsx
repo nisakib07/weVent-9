@@ -1,11 +1,14 @@
 import { useContext } from "react";
 import Navbar from "../../components/Navbar/Navbar";
 import { AuthContext } from "../../Providers/AuthProvider/AuthProvider";
-import { ToastContainer, toast } from "react-toastify";
+import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import { useLocation, useNavigate } from "react-router-dom";
 
 const Login = () => {
   const { userSignIn } = useContext(AuthContext);
+  const location = useLocation();
+  const navigate = useNavigate();
 
   const handleLoginSubmit = (e) => {
     e.preventDefault();
@@ -16,6 +19,8 @@ const Login = () => {
     userSignIn(email, password)
       .then(() => {
         toast.success("Signed In Successfully");
+
+        navigate(location?.state ? location.state : "/");
       })
       .catch(() => {
         toast.error("Sign In Failed");
@@ -23,7 +28,7 @@ const Login = () => {
   };
 
   return (
-    <div>
+    <div className="bg-pink-700">
       <Navbar></Navbar>
       <div className="hero min-h-scree">
         <div className="hero-content flex-col">
@@ -64,10 +69,6 @@ const Login = () => {
                 />
               </div>
             </form>
-
-            <ToastContainer
-              pauseOnHover={false}
-              autoClose={2000}></ToastContainer>
           </div>
         </div>
       </div>

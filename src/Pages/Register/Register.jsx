@@ -6,8 +6,7 @@ import "react-toastify/dist/ReactToastify.css";
 // import { useNavigate } from "react-router-dom";
 
 const Register = () => {
-  const { createUser, userProfileUpdate, userSignOut } =
-    useContext(AuthContext);
+  const { createUser, userProfileUpdate } = useContext(AuthContext);
 
   //   const navigate = useNavigate();
 
@@ -30,12 +29,10 @@ const Register = () => {
 
     createUser(email, password)
       .then(() => {
-        userSignOut();
+        window.location.reload();
         userProfileUpdate(name);
-
         toast.success("Successfully Registered! Go to login!!!");
         e.target.reset();
-        // navigate("/login");
       })
       .catch((error) => {
         toast.error(error.message);
@@ -43,7 +40,7 @@ const Register = () => {
       });
   };
   return (
-    <div>
+    <div className="bg-pink-700">
       <Navbar></Navbar>
       <div className="hero min-h-scree">
         <div className="hero-content flex-col">

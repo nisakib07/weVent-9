@@ -7,7 +7,7 @@ const Home = () => {
   const data = useLoaderData();
 
   return (
-    <div>
+    <div className="bg-pink-700">
       <div
         className="bg-contain"
         style={{
@@ -33,9 +33,12 @@ const Home = () => {
         </div>
       </div>
       <div className="mt-20">
-        <h1 className="text-center mb-32 text-3xl text-white">
-          Services you might grab
-        </h1>
+        <div className="mb-28 text-center text-white">
+          <h1 className=" text-4xl font-bold">Services we provide</h1>
+          <p className="mt-4">
+            Best services at the cheapest rate. You might not think twice!
+          </p>
+        </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
           {data.map((singleCard) => (
             <Card key={singleCard.id} singleCard={singleCard}></Card>

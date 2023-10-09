@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 
 const Card = ({ singleCard }) => {
   const { name, image, shortDetails, price, id } = singleCard;
+
   return (
     <div className="card glass sh">
       <figure>
@@ -13,7 +14,7 @@ const Card = ({ singleCard }) => {
         <p className="text-zinc-200">{shortDetails}</p>
         <p className="text-2xl font-semibold text-sky-700">Price: {price}</p>
         <div className="card-actions justify-end">
-          <Link to={`/card/${id}`}>
+          <Link to={`/details/${id}`}>
             <button className="btn bg-gray-800 text-white border-none hover:bg-gray-600">
               See Details
             </button>
