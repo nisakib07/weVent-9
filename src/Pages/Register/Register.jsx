@@ -7,9 +7,8 @@ import { Link } from "react-router-dom";
 // import { useNavigate } from "react-router-dom";
 
 const Register = () => {
-  const { createUser, userProfileUpdate } = useContext(AuthContext);
-
-  //   const navigate = useNavigate();
+  const { createUser, userProfileUpdate, userSignOut } =
+    useContext(AuthContext);
 
   const handleRegisterSubmit = (e) => {
     e.preventDefault();
@@ -31,7 +30,7 @@ const Register = () => {
 
     createUser(email, password)
       .then(() => {
-        window.location.reload();
+        userSignOut();
         userProfileUpdate(name, photo);
         toast.success("Successfully Registered! Go to login!!!");
         e.target.reset();
@@ -70,7 +69,6 @@ const Register = () => {
                   name="photo"
                   placeholder="Enter photoURL"
                   className="input input-bordered focus:text-pink-600 placeholder:font"
-                  required
                 />
                 <label className="label">
                   <span className="label-text font-semibold ">Email</span>

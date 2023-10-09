@@ -30,8 +30,8 @@ const Details = () => {
       <div className="w-3/4 mx-auto">
         <img className="w-full" src={image} alt="" />
 
-        <h3 className="text-3xl">{name}</h3>
-        <p>Price : {price}</p>
+        <h3 className="text-3xl text-center mt-5">{name}</h3>
+        <p className="text-2xl font-bold mb-3">Price : {price}</p>
         <p>{description}</p>
       </div>
     </div>

@@ -12,19 +12,21 @@ const Home = () => {
   return (
     <div className="bg-pink-700">
       <div
-        className="bg-contain"
+        className="bg-cover"
         style={{
           backgroundImage:
             "url(https://i.ibb.co/Jkm96Nh/istockphoto-1298329918-612x612.jpg)",
         }}>
-        <Navbar></Navbar>
+        <div>
+          <Navbar></Navbar>
+        </div>
         <div className="hero min-h-[500px]">
           <div className="text-center text-white">
             <div className="max-w-md">
               <h1 className="mb-5 text-5xl font-bold">
                 Celebrating Moments, Creating Memories
               </h1>
-              <p className="mb-5">
+              <p className="mb-5 text font-medium">
                 At WeVent, we are passionate about turning your dreams into
                 extraordinary social events. From intimate gatherings to grand
                 celebrations, our expert team crafts experiences that leave a
@@ -54,7 +56,9 @@ const Home = () => {
       <div>
         <Feedback></Feedback>
       </div>
-      <Footer></Footer>
+      <div className="bg-pink-400">
+        <Footer></Footer>
+      </div>
     </div>
   );
 };
