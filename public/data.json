@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "name": "Birthday Party Planning",
+    "image": "https://i.ibb.co/tHFmgmV/birthday.jpg",
+    "price": "$500",
+    "shortDetails": "Crafting Unforgettable Birthday Celebrations with Creative Themes, Decor, Entertainment, and Delicious Catering Options.",
+    "description": "Our Birthday Party Planning service is designed to make your special day unforgettable. Whether it's a milestone birthday or a surprise party, we handle all the details. From creative themes and decorations to entertainment and catering, we ensure that every aspect of your birthday celebration is perfect. Let us bring your vision to life and create memories that will last a lifetime. Make your birthday one to remember with our expert party planning."
+  },
+  {
+    "id": 2,
+    "name": "Wedding Decorations",
+    "image": "https://i.ibb.co/h2kwKxw/wedding.webp",
+    "price": "$1,200",
+    "shortDetails": "Elegant Transformations for Timeless Weddings with Stunning Floral Arrangements, Exquisite Table Settings, and Romantic Atmosphere.",
+    "description": "Elegance and beauty are the hallmarks of our Wedding Decorations service. We understand that your wedding day is one of the most important events of your life, and we're here to make it truly magical. Our team of skilled decorators will work closely with you to create a wedding ambiance that reflects your unique style and vision. From stunning floral arrangements to exquisite table settings, we pay attention to every detail. Trust us to turn your dream wedding into a reality."
+  },
+  {
+    "id": 3,
+    "name": "Anniversary Celebrations",
+    "image": "https://i.ibb.co/QNVnpJ6/anniversary.jpg",
+    "price": "$400",
+    "shortDetails": "Crafting Romantic Anniversary Experiences Filled with Love, Surprises, Exquisite Dining, and Heartfelt Moments.",
+    "description": "Celebrate your love with a memorable Anniversary Celebration. Whether it's your first anniversary or a milestone year, we specialize in creating romantic and unforgettable experiences. Our anniversary planning service includes thoughtful surprises, beautiful decor, and exquisite dining options. We take care of all the arrangements so that you can focus on cherishing your love and creating lasting memories. Let us make your anniversary a romantic and joyous occasion."
+  },
+  {
+    "id": 4,
+    "name": "Engagement Party Planning",
+    "image": "https://i.ibb.co/dkTjZW9/engagement.jpg",
+    "price": "$600",
+    "shortDetails": "Crafting Special Engagement Parties that Set the Stage for a Lifetime of Love, Joy, and Cherished Moments.",
+    "description": "Engagements are a time of joy and anticipation, and our Engagement Party Planning service is dedicated to making this moment special. Whether you prefer an intimate gathering or a grand celebration, we'll work with you to plan the perfect engagement party. From venue selection and decor to entertainment and catering, we handle all the details. Let us create an engagement party that reflects your love story and sets the stage for your future together."
+  },
+  {
+    "id": 5,
+    "name": "Retirement Party Services",
+    "image": "https://i.ibb.co/5jjLcyF/retirement.jpg",
+    "price": "$300",
+    "shortDetails": "Honoring Retirees with Memorable Celebrations that Capture Their Achievements, Successes, and Legacy.",
+    "description": "Retirements mark the end of a successful career, and our Retirement Party Services are designed to celebrate this significant milestone. We'll help you honor the retiree with a memorable party that showcases their accomplishments. Our services include theme selection, decor, speeches, and entertainment options that capture the essence of their journey. Whether it's a formal affair or a fun and relaxed gathering, we'll ensure that the retirement party is a fitting tribute to a well-deserved retirement."
+  },
+  {
+    "id": 6,
+    "name": "Baby Shower Arrangements",
+    "image": "https://i.ibb.co/hg96d1Q/baby-shower.jpg",
+    "price": "$250",
+    "shortDetails": "Creating Charming Baby Showers to Celebrate the Upcoming Arrival of a New Life with Adorable Decorations, Fun Activities, and Heartwarming Moments.",
+    "description": "Expecting a new addition to the family? Our Baby Shower Arrangements service is here to help you celebrate this joyous occasion. We specialize in creating charming and delightful baby showers that reflect your style and preferences. From adorable decorations to thoughtful games and activities, we take care of all the details. Let us create a memorable baby shower that welcomes the mom-to-be and celebrates the upcoming arrival of the little one. It's a special time, and we're here to make it even more special."
+  }
+]
