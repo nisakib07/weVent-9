@@ -12,7 +12,7 @@ const Card = ({ singleCard }) => {
       <div className="card-body">
         <h2 className="text-2xl font-bold text-zinc-200">{name}</h2>
         <p className="text-zinc-200">{shortDetails}</p>
-        <p className="text-2xl font-semibold text-sky-700">Price: {price}</p>
+        <p className="text-2xl font-semibold text-white">Price: {price}</p>
         <div className="card-actions justify-end">
           <Link to={`/details/${id}`}>
             <button className="btn bg-gray-800 text-white border-none hover:bg-gray-600">
