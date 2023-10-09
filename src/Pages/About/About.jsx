@@ -8,7 +8,7 @@ const About = () => {
         <Navbar></Navbar>
       </div>
       <div
-        className="shadow-xl mt-10 w-1/2 mx-auto p-5 rounded-lg"
+        className="shadow-xl mt-10 lg:w-1/2 mx-auto p-5 rounded-lg"
         data-aos="fade-up">
         <h3 className="text-3xl mb-3 font-bold text-center">
           Our Mission and Values
@@ -43,7 +43,7 @@ const About = () => {
         </p>
       </div>
       <div
-        className="shadow-xl mt-10 w-1/2 mx-auto p-5 rounded-lg mb-4"
+        className="shadow-xl mt-10 lg:w-1/2 mx-auto p-5 rounded-lg mb-4"
         data-aos="fade-up">
         <h3 className="text-3xl mb-3 font-bold text-center">Company Culture</h3>
         <p>

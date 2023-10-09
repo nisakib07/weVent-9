@@ -3,6 +3,8 @@ import { useLoaderData } from "react-router-dom";
 import Navbar from "../../components/Navbar/Navbar";
 import Card from "../../components/Card/Card";
 import Footer from "../../components/footer/Footer";
+import Comments from "../../components/Comments/Comments";
+import Feedback from "../../components/Feedback/Feedback";
 
 const Home = () => {
   const data = useLoaderData();
@@ -35,7 +37,7 @@ const Home = () => {
       </div>
       <div className="mt-20">
         <div className="mb-28 text-center text-white">
-          <h1 className=" text-4xl font-bold">Services we provide</h1>
+          <h1 className="text-4xl font-bold">Services we provide</h1>
           <p className="mt-4">
             Best services at the cheapest rate. You might not think twice!
           </p>
@@ -45,6 +47,12 @@ const Home = () => {
             <Card key={singleCard.id} singleCard={singleCard}></Card>
           ))}
         </div>
+      </div>
+      <div>
+        <Comments></Comments>
+      </div>
+      <div>
+        <Feedback></Feedback>
       </div>
       <Footer></Footer>
     </div>

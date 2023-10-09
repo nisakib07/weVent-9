@@ -9,7 +9,7 @@ const Portal = () => {
       <div className="bg-pink-600">
         <Navbar></Navbar>
       </div>
-      <div className="card card-side bg-base-100 shadow-xl w-1/2 mx-auto mt-10 flex justify-center items-center">
+      <div className="card card-side bg-base-100 shadow-xl lg:ow-1/2 mx-auto mt-10 flex justify-center items-center">
         <figure className="w-1/3">
           <img
             className="h-full"
