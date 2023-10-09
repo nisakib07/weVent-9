@@ -8,11 +8,13 @@ import PrivateRoute from "../components/PrivateRoute/PrivateRoute";
 import Details from "../Pages/Details/Details";
 import About from "../Pages/About/About";
 import Portal from "../Pages/Portal/Portal";
+import Error from "../Pages/Error/Error";
 
 const Router = createBrowserRouter([
   {
     path: "/",
     element: <Root></Root>,
+    errorElement: <Error></Error>,
     children: [
       {
         path: "/",

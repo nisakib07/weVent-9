@@ -14,6 +14,7 @@ const Register = () => {
   const handleRegisterSubmit = (e) => {
     e.preventDefault();
     const name = e.target.name.value;
+    const photo = e.target.photo.value;
     const email = e.target.email.value;
     const password = e.target.password.value;
 
@@ -31,7 +32,7 @@ const Register = () => {
     createUser(email, password)
       .then(() => {
         window.location.reload();
-        userProfileUpdate(name);
+        userProfileUpdate(name, photo);
         toast.success("Successfully Registered! Go to login!!!");
         e.target.reset();
       })
@@ -55,9 +56,19 @@ const Register = () => {
                   <span className="label-text font-semibold ">Name</span>
                 </label>
                 <input
-                  type="name"
+                  type="text"
                   name="name"
                   placeholder="Enter your name"
+                  className="input input-bordered focus:text-pink-600 placeholder:font"
+                  required
+                />
+                <label className="label">
+                  <span className="label-text font-semibold ">Photo</span>
+                </label>
+                <input
+                  type="text"
+                  name="photo"
+                  placeholder="Enter photoURL"
                   className="input input-bordered focus:text-pink-600 placeholder:font"
                   required
                 />

@@ -5,7 +5,7 @@ const Card = ({ singleCard }) => {
   const { name, image, shortDetails, price, id } = singleCard;
 
   return (
-    <div className="card glass" data-aos="flip-left">
+    <div className="card glass" data-aos="fade-up">
       <figure>
         <img className="w-full h-[350px]" src={image} alt="car!" />
       </figure>
